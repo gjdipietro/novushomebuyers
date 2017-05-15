@@ -1,0 +1,21 @@
+.c-layout {
+    &__aside {
+        margin-top: $unit;
+        padding-top: $unit;
+        border-top: 1px solid $lightgrey;
+    }
+    @media screen and (min-width: 40em) {
+        @include clearfix();
+        &__content {
+            float: left;
+            width: 70%;
+        }
+        &__aside {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+            float: left;
+            width: 25%;
+        }
+    }
+}

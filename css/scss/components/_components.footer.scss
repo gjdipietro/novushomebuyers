@@ -1,0 +1,11 @@
+.c-globalFooter {
+    background: $brand-blue;
+    color: $brand-white;
+    margin-top: $unit*4;
+}
+.c-globalFooter-copyright {
+    @include font-size(14px);
+    padding: $unit;
+    margin: 0;
+    text-align: center;
+}

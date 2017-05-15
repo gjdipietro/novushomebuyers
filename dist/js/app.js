@@ -1,0 +1,1 @@
+!function(){document.addEventListener("DOMContentLoaded",function(e){function n(){c.classList.toggle("c-masthead__nav--visible")}var t=document.querySelector(".js-menu-toggle"),c=document.querySelector(".js-menu");!function(){t.addEventListener("click",n),t.addEventListener("tap",n)}()})}();

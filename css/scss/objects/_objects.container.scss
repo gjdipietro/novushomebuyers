@@ -1,0 +1,17 @@
+.o-container {
+	background: $brand-white;
+	box-shadow: 0 9px 0px 0px #FFF, 0 -9px 0px 0px #FFF, 12px 0 15px -4px #CCC, -12px 0 15px -4px #CCC;
+	width: 100%;
+	margin: 0 auto;
+}
+.o-container__inner {
+	padding: 0 $unit/2;
+}
+@media screen and (min-width: $mq-fulllayout) {
+	.o-container {
+		width: $container;
+	}
+	.o-container__inner {
+		padding: 0 $unit*2;
+	}
+}

@@ -1,0 +1,48 @@
+.c-contact {
+    background: $ribbon-orange;
+    border-top: 8px solid $brand-white;
+    padding: $unit;
+    text-align: center;
+
+    &__title {
+        @include font-size(20px);
+        max-width: 30em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__form {
+        margin-bottom: $unit;
+        &__entry {
+            display: block;
+            height: 50px;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto 1em auto;
+        }
+    }
+    &__fineprint {
+        @include font-size(12px);
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: 50em) {
+        &__form__entry {
+            display: inline-block;
+            margin-left: 1em;
+            width: auto;
+            &:first-child {
+                 margin-left: 0;
+            }
+        }
+        &__form__entry--button {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    @media screen and (min-width: 56em) {
+        &__form__entry, &__form__entry--button {
+            display: inline-block;
+            margin-left: 1em;
+            width: auto;
+        }
+    }
+}
