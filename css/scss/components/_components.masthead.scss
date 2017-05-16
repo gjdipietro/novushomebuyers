@@ -56,11 +56,6 @@
 		border-bottom: 3px solid $brand-green;
 		margin: 0; 
 		padding: 0;
-		&:after {
-			content: "" !important;
-    		display: block !important;
-    		clear: both !important;
-		}
 		&__menu {
 			display: none;
 			margin: 0;
@@ -85,69 +80,34 @@
 				display: block;
 			}
 		}
-		.sub-menu {
-			display: block;
-			width: 100%;
-			list-style: none;
-			margin:0; 
-			padding: 0;
-			.menu-item a {
-				color: #FFF;
-				display: block;
-				padding: $unit;
-			}
-		}
 		
 		@media screen and (min-width: $mq-showMastHeadNavigationSmall) {
 			&__toggle {
 				display: none;
 			}
 			&__menu {
+				@include clearfix();
 				display: block;
 				> .menu-item {
-					border-bottom: 0;
-					border-left: 1px solid #135094;
-					border-right: 1px solid #135094;
 					float: left;
 					position: relative;
 					a {
-						display: inline-block;
+						display: block;
 						padding: $unit $unit/2;
+						border-bottom: 0;
+						border-left: 1px solid #135094;
+					}
+					&:last-child a {
+						border-right: 1px solid #135094;
 					}
 				}
 			}
 			
-			.menu-item-has-children > a:hover + .sub-menu,
-			.menu-item-has-children > .sub-menu:hover,
-			.menu-item-has-children > a:active + .sub-menu,
-			.menu-item-has-children > a:focus + .sub-menu {
-				display: block;
-			}
-			.sub-menu {
-				background: $brand-white;
-				border: 3px solid $brand-green;
-				display: none;
-				left: 0;
-				list-style: none;
-				margin:0; 
-				padding: 0;
-				position: absolute;
-				top: 100%;
-				width: 300px;
-				z-index: 10;
-			}
-			.sub-menu > .menu-item a {
-				color: $brand-blue;
-				padding: $unit/2;
-				&:hover {
-					background:#EEE;
-				}
-			}
+			
 			//active menu items
 			&__menu {
 				> .menu-item > a:hover,
-				> .menu-item.current-menu-item > a,
-				> .menu-item.current-menu-parent > a {
+				> .menu-item.current-menu-item > a {
 					&:before {
 						content: "";
 						position: absolute;
@@ -155,7 +115,7 @@
 						left: 0;
 						right: 0;
 						width: 70%;
-						height: 1em;
+						height: .5em;
 						background: $brand-green;
 						margin: 0 auto;
 					}
@@ -169,14 +129,5 @@
 		}
 
 	}
-		
-
-		//menu items look and giving caret
-		.c-masthead__nav__menu > .menu-item-has-children > a:after {
-			content: "\25BC";
-			color: #FFF;
-			font-size: .75em;
-			padding-left: $unit/2;
-		}
 		
 		

@@ -1,5 +1,4 @@
-.menu-social {
-    float: left;
+.c-menu-social {
     margin: 0;
     padding: 0;
     a {
@@ -8,6 +7,7 @@
         margin: 0 0 0 $unit/2;
         height: 24px;
         width: 24px;
+        color: #FFF;
         &:hover {
             opacity: .6;
             text-decoration: none;
