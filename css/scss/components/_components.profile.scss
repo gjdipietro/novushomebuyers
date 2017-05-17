@@ -34,12 +34,8 @@
 		}
 	}
 	@media all and ( min-width: $mq-fulllayout ) {
-        margin-left: -8.125em;
-        margin-right: -8.125em;
 		&__image {
 			min-width: 150px;
 		}
-    }
-
-        
+    }   
 }

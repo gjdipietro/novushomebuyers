@@ -1,7 +1,7 @@
 .c-featured {
     position: relative;
     overflow: hidden;
-    height: 33em;
+    height: 35em;
     &__image {
         background-color: #481854;
         background-size: cover;
@@ -40,13 +40,11 @@
     &__services {
         @include clearfix();
         background: #FFF;
-        opacity: .6;
-        margin-bottom: 0;
-        position: absolute;
-        bottom: 0;
-        left: 0;
+        margin-bottom: $unit;
+        border-radius: 3px;
+        opacity: .55;
         &__service {
-            margin-bottom: $unit/2;
+            margin: $unit;
             &__title {
                 @include font-size(14px);
                 font-weight: 600;
@@ -58,22 +56,32 @@
             }
         }
     }
-    @media screen and (min-width:30em) { 
+    @media screen and (min-width:33em) { 
         &__header {
             top: 5em;
         }
         &__services {
             @include clearfix();
+            display: flex;
+            align-items: stretch;
             background:none;
             opacity: 1;
             &__service {
                 background: #FFF;
-                opacity: .6;  
+                border-radius: 3px;
+                border:1px solid $ribbon-purple;
+                opacity: .55;  
                 margin: 1% 1% 0 1%; 
                 padding: $unit/2;
                 width: 31.3333%;
                 float: left;
                 min-height: 10em;
+                &__title {
+                    @include font-size(16px);
+                }
+                &__copy {
+                    @include font-size(14px);
+                }
             }
         }
     }

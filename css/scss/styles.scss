@@ -21,15 +21,7 @@
 
 @import "objects/objects.container";
 @import "objects/objects.entry";
-
-/*
-@import "objects/objects.animations";
-@import "objects/objects.drawer";
-@import "objects/objects.list-bare";
-@import "objects/objects.media";
-@import "objects/objects.layout";
-@import "objects/objects.overlays";
-*/
+@import "objects/objects.layoutresidential";
 
 @import "components/components.ribbon";
 @import "components/components.masthead";
@@ -42,9 +34,9 @@
 @import "components/components.banner";
 @import "components/components.threesteps";
 @import "components/components.layout";
-@import "components/components.social";
 
 @import "utilities/utilities.clearfix";
+@import "utilities/utilities.release";
 @import "utilities/utilities.hide";
 
 
