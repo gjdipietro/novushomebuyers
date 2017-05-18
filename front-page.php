@@ -40,38 +40,6 @@
 
     <?php include(locate_template('widget-contactform.php'));  ?>
 
-    
-    <div class="c-threesteps">
-        <div class="o-container__inner">
-            <div class="c-threesteps__item">
-                <a href="<?php echo get_site_url(); ?>/residential/">
-                    <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2017/05/3steps.png" class="c-threesteps__image" />
-                </a>
-                <footer class="c-threesteps__footer">
-                    <div class="c-threesteps__footer__action">
-                    <a href="<?php echo get_site_url(); ?>/residential/" class="e-btn e-btn--skew e-btn--blue e-btn--small">
-                        <span>Learn More</span>
-                    </a>
-                    </div>
-                </footer>
-            </div>
-            
-            <div class="c-threesteps__item">
-                <a href="<?php echo get_site_url(); ?>/residential/">
-                    <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2017/04/make1000.png" class="c-threesteps__image" />
-                </a>
-                <footer class="c-threesteps__footer">
-                    <div class="c-threesteps__footer__action">
-                        <a href="<?php echo get_site_url(); ?>/residential/" class="e-btn e-btn--skew e-btn--green e-btn--small">
-                            <span>Learn More</span>
-                        </a>
-                    </div>
-                </footer>
-            </div>
-        </div>
-        
-    </div>
-
     <div class="c-banner c-banner--centered">
         <div class="o-container__inner">
             <h2 class="c-banner__title"><?php echo get_post_meta($post->ID, 'getStartedHeading', true); ?></h2>

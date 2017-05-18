@@ -21,7 +21,7 @@
 
 @import "objects/objects.container";
 @import "objects/objects.entry";
-@import "objects/objects.layoutresidential";
+@import "objects/objects.inlay";
 
 @import "components/components.ribbon";
 @import "components/components.masthead";
@@ -32,8 +32,8 @@
 @import "components/components.profile";
 @import "components/components.footer";
 @import "components/components.banner";
-@import "components/components.threesteps";
-@import "components/components.layout";
+@import "components/components.solutiongrid";
+@import "components/components.grid3";
 
 @import "utilities/utilities.clearfix";
 @import "utilities/utilities.release";

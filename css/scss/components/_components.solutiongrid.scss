@@ -1,0 +1,37 @@
+.c-solutiongrid {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+        border: 2px solid #CCC;
+        border-bottom-color: $ribbon-orange;
+        padding: $unit/2;
+        &:nth-child(2n) {
+            border-bottom-color: $ribbon-orangered;
+        }
+        &:nth-child(3n) {
+            border-bottom-color: $ribbon-red;
+        }
+        &:nth-child(4n) {
+            border-bottom-color: $ribbon-indigo;
+        }
+        &:nth-child(5n) {
+            border-bottom-color: $ribbon-purple;
+        }
+        &:nth-child(6n) {
+            border-bottom-color: $ribbon-blue;
+        }
+        &:nth-child(7n) {
+            border-bottom-color: $ribbon-green;
+        }
+        &:nth-child(8n) {
+            border-bottom-color: $ribbon-teal;
+        }
+        &:nth-child(9n) {
+            border-bottom-color: $ribbon-lime;
+        }
+    }
+}

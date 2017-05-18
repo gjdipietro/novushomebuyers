@@ -1,0 +1,10 @@
+.o-inlay {
+    background: #EEE;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: $unit*2;
+    margin: $unit*3 0;
+    h2 {
+        text-align: center;
+    }
+}

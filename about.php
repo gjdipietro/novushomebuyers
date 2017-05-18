@@ -18,18 +18,18 @@
         
         <section class="o-inlay">
             <h2><?php echo get_post_meta($post->ID, 'whyNovusTitle', true); ?></h2>
-            <ul class="o-grid3">
-                <li class="o-grid3__item">
-                    <h3 class="o-grid3__title"><?php echo get_post_meta($post->ID, 'whyNovusItem1Title', true); ?></h3>
-                    <p class="o-grid3__copy"><?php echo get_post_meta($post->ID, 'whyNovusItem1Body', true); ?></p>
+            <ul class="c-grid3">
+                <li class="c-grid3__item">
+                    <h3 class="c-grid3__title"><?php echo get_post_meta($post->ID, 'whyNovusItem1Title', true); ?></h3>
+                    <p class="c-grid3__copy"><?php echo get_post_meta($post->ID, 'whyNovusItem1Body', true); ?></p>
                 </li>
-                <li class="o-grid3__item">
-                    <h3 class="o-grid3__title"><?php echo get_post_meta($post->ID, 'whyNovusItem2Title', true); ?></h3>
-                    <p class="o-grid3__copy"><?php echo get_post_meta($post->ID, 'whyNovusItem2Body', true); ?></p>
+                <li class="c-grid3__item">
+                    <h3 class="c-grid3__title"><?php echo get_post_meta($post->ID, 'whyNovusItem2Title', true); ?></h3>
+                    <p class="c-grid3__copy"><?php echo get_post_meta($post->ID, 'whyNovusItem2Body', true); ?></p>
                 </li>
-                <li class="o-grid3__item">
-                    <h3 class="o-grid3__title"><?php echo get_post_meta($post->ID, 'whyNovusItem3Title', true); ?></h3>
-                    <p class="o-grid3__copy"><?php echo get_post_meta($post->ID, 'whyNovusItem3Body', true); ?></p>
+                <li class="c-grid3__item">
+                    <h3 class="c-grid3__title"><?php echo get_post_meta($post->ID, 'whyNovusItem3Title', true); ?></h3>
+                    <p class="c-grid3__copy"><?php echo get_post_meta($post->ID, 'whyNovusItem3Body', true); ?></p>
                 </li>
             </ul>
         </section>
