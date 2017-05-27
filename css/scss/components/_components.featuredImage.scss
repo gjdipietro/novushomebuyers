@@ -1,7 +1,7 @@
 .c-featured {
     position: relative;
     overflow: hidden;
-    height: 35em;
+    height: 20em;
     &__image {
         background-color: #481854;
         background-size: cover;
@@ -26,7 +26,7 @@
         text-align: center;
         z-index: 1;
         &__title {
-            @include font-size(24px);
+            @include font-size(26px);
             text-shadow: 3px 3px 3px $darkgrey; 
             color: #FFF;
             max-width: 18em;
@@ -37,64 +37,13 @@
            box-shadow: 3px 3px 3px $darkgrey; 
         }
     }
-    &__services {
-        @include clearfix();
-        background: #FFF;
-        margin-bottom: $unit;
-        border-radius: 3px;
-        opacity: .55;
-        &__service {
-            margin: $unit;
-            &__title {
-                @include font-size(14px);
-                font-weight: 600;
-                margin: 0;   
-            }
-            &__copy {
-                @include font-size(13px);
-                margin: 0;
-            }
-        }
-    }
-    @media screen and (min-width:33em) { 
-        &__header {
-            top: 5em;
-        }
-        &__services {
-            @include clearfix();
-            display: flex;
-            align-items: stretch;
-            background:none;
-            opacity: 1;
-            &__service {
-                background: #FFF;
-                border-radius: 3px;
-                border:1px solid $ribbon-purple;
-                opacity: .55;  
-                margin: 1% 1% 0 1%; 
-                padding: $unit/2;
-                width: 31.3333%;
-                float: left;
-                min-height: 10em;
-                &__title {
-                    @include font-size(16px);
-                }
-                &__copy {
-                    @include font-size(14px);
-                }
-            }
-        }
-    }
     @media screen and (min-width: 60em) { 
-        height: 33.85em;
+        height: 25em;
         &__header {
-            top: 8em;
+            top: 6em;
              &__title {
                 @include font-size(32px);
             }
-        }
-        &__services__service {
-            min-height: 5em;
         }
     }
 }

@@ -15,10 +15,12 @@
                 <div class="entry-links"><?php wp_link_pages(); ?></div>
             </div>
         </section>
-    </article>
-    <?php if ( get_post_meta($post->ID, 'contactFormID', true) ) {
+        
+        <?php if ( get_post_meta($post->ID, 'includeContactForm', true) ) {
         include(locate_template('widget-contactform.php'));  
-     } ?>
+        } ?>
+    </article>
+    
     
     <?php endwhile; endif; ?>
 </section>

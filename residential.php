@@ -15,36 +15,49 @@
                 <?php the_content(); ?>
             </div>
         </section>
+        
         <section class="o-inlay">
-            <h2><?php echo get_post_meta($post->ID, 'offerTitle', true); ?></h2>
-            <ul class="c-grid3">
-                <li class="c-grid3__item">
-                    <h3 class="c-grid3__title"><?php echo get_post_meta($post->ID, 'offerItem1Title', true); ?></h3>
-                    <p class="c-grid3__copy"><?php echo get_post_meta($post->ID, 'offerItem1Body', true); ?></p>
-                </li>
-                <li class="c-grid3__item">
-                    <h3 class="c-grid3__title"><?php echo get_post_meta($post->ID, 'offerItem2Title', true); ?></h3>
-                    <p class="c-grid3__copy"><?php echo get_post_meta($post->ID, 'offerItem2Body', true); ?></p>
-                </li>
-                <li class="c-grid3__item">
-                    <h3 class="c-grid3__title"><?php echo get_post_meta($post->ID, 'offerItem3Title', true); ?></h3>
-                    <p class="c-grid3__copy"><?php echo get_post_meta($post->ID, 'offerItem3Body', true); ?></p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="o-entry__content">
-            <div class="o-container__inner">
-                <figure><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2017/05/3steps.png" alt="3 Steps away from a sale" /></figure>
-                <h2><?php echo get_post_meta($post->ID, 'optionsTitle', true); ?></h2>
-                <?php echo get_post_meta($post->ID, 'optionsBody', true); ?>
+            <div class="o-container">
+                <h2><?php echo get_post_meta($post->ID, 'offerTitle', true); ?></h2>
+                <ul class="c-grid3">
+                    <li class="c-grid3__item">
+                        <h3 class="c-grid3__title"><?php echo get_post_meta($post->ID, 'offerItem1Title', true); ?></h3>
+                        <p class="c-grid3__subtitle"><?php echo get_post_meta($post->ID, 'offerItem1Subtitle', true); ?></p>
+                        <p class="c-grid3__copy"><?php echo get_post_meta($post->ID, 'offerItem1Body', true); ?></p>
+                    </li>
+                    <li class="c-grid3__item">
+                        <h3 class="c-grid3__title"><?php echo get_post_meta($post->ID, 'offerItem2Title', true); ?></h3>
+                        <p class="c-grid3__subtitle"><?php echo get_post_meta($post->ID, 'offerItem2Subtitle', true); ?></p>
+                        <p class="c-grid3__copy"><?php echo get_post_meta($post->ID, 'offerItem2Body', true); ?></p>
+                    </li>
+                    <li class="c-grid3__item">
+                        <h3 class="c-grid3__title"><?php echo get_post_meta($post->ID, 'offerItem3Title', true); ?></h3>
+                        <p class="c-grid3__subtitle"><?php echo get_post_meta($post->ID, 'offerItem3Subtitle', true); ?></p>
+                        <p class="c-grid3__copy"><?php echo get_post_meta($post->ID, 'offerItem3Body', true); ?></p>
+                    </li>
+                </ul>
             </div>
         </section>
 
-    </article>
-    <?php if ( get_post_meta($post->ID, 'contactFormID', true) ) {
+        <section class="c-imageCopy c-imageCopy--left">
+            <div class="o-container">
+                <div class="o-container__inner">
+                    <figure class="c-imageCopy__img">
+                        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2017/05/3steps.png" alt="3 Steps away from a sale" />
+                    </figure>
+                    <div class="c-imageCopy__copy">
+                        <h2><?php echo get_post_meta($post->ID, 'optionsTitle', true); ?></h2>
+                        <?php echo get_post_meta($post->ID, 'optionsBody', true); ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <?php if ( get_post_meta($post->ID, 'includeContactForm', true) ) {
         include(locate_template('widget-contactform.php'));  
-     } ?>
+        } ?>
+    </article>
+    
     
     <?php endwhile; endif; ?>
 </section>

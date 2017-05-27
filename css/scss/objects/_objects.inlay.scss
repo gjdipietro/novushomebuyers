@@ -7,4 +7,13 @@
     h2 {
         text-align: center;
     }
+    p {
+        max-width: 50em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &--tight {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }

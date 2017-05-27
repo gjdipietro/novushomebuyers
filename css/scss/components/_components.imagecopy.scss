@@ -1,0 +1,35 @@
+.c-imageCopy {
+	max-width: 60em;
+	margin: 0 auto $unit*2 auto;
+    &__img {
+        margin-bottom: $unit;
+        img {
+            margin: 0 auto;
+        }
+	}
+	@media all and ( min-width: 45em ) {
+		@include clearfix();
+		&__img {
+			float: left;
+    		width: auto;
+    		max-width: 47%;
+            margin-right: 3%;
+			margin-bottom: 0
+		}
+		&__copy {
+			float: left;
+			width: 50%;
+			max-width: 42em;
+		}
+        &--right {
+            .c-imageCopy__img {
+                float: right;
+                max-width: 47%;
+                margin-left: 3%;
+                margin-right: 0;
+            }
+        }
+	}
+
+    
+}

@@ -21,11 +21,20 @@
         margin-bottom: $unit/2;
         font-weight: 700;
     }
-    &__copy {
+    &__subtitle {
         @include font-size(14px);
+        margin-top: ($unit/2)*-1;
+        text-align: center;
+        margin-bottom: $unit;     
+    }
+    &__copy {
+        @include font-size(15px);
         margin-bottom: 0;
     }
-    @media screen and (min-width:35em) { 
+    &--centered {
+        text-align: center;
+    }
+    @media screen and (min-width:45em) { 
         @include clearfix();
         display: flex;
         align-items: stretch;

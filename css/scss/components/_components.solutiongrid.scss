@@ -5,10 +5,11 @@
     padding: 0;
     list-style: none;
     li {
-        display: inline-block;
+        display: block;
         border: 2px solid #CCC;
         border-bottom-color: $ribbon-orange;
         padding: $unit/2;
+        text-align: center;
         &:nth-child(2n) {
             border-bottom-color: $ribbon-orangered;
         }
@@ -32,6 +33,21 @@
         }
         &:nth-child(9n) {
             border-bottom-color: $ribbon-lime;
+        }
+    }
+
+    @media screen and (min-width:40em) { 
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: center;
+        
+        li {
+            display: inline-block;
+            flex-wrap: wrap;
+            flex: 0 0 48%;
+            margin: 1%;
         }
     }
 }
