@@ -1,15 +1,11 @@
 .o-container {
 	width: 100%;
 	margin: 0 auto;
-}
-.o-container__inner {
-	padding: 0 $unit/2;
+	padding: 0 1em;
 }
 @media screen and (min-width: $mq-fulllayout) {
 	.o-container {
 		width: $container;
-	}
-	.o-container__inner {
-		padding: 0 $unit*2;
+		padding: 0;
 	}
 }

@@ -23,48 +23,44 @@
             <header class="c-masthead" id="header" role="banner">
                 <div class="o-container">
                     <div class="c-masthead__main">
-                        <div class="o-container__inner">
-                            <h1 class="c-masthead__main__logo">
-                                <a href="<?php echo home_url(); ?>" rel="home" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>">
-                                    <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-                                    <img class="c-masthead__main__logo__image" src="<?php echo get_template_directory_uri(); ?>/dist/img/novuslogo.svg" alt="Novus Home Buyers">
-                                    <span class="u-hiddenVisually">Novus Home Buyers</span>
-                                </a>
-                                <span class="u-hiddenVisually"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></span>
-                            </h1>
-                            <div class="c-masthead__main__business c-business" itemscope="" itemtype="http://schema.org/LocalBusiness">
-                                <div class="c-business__contact">
-                                    <label class="c-business__label">Get in touch</label>
-                                    <div>
-                                        <a href="mailto:info@novushomebuyers.com" itemprop="email">info@novushomebuyers.com</a>
-                                    </div>
-                                    <div>
-                                        <a href="tel:571-384-5474" class="c-business__phone" itemprop="telephone"  content="571-384-5474">
-                                            571-384-5474
-                                        </a>
-                                    </div>
+                        <h1 class="c-masthead__main__logo">
+                            <a href="<?php echo home_url(); ?>" rel="home" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>">
+                                <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+                                <img class="c-masthead__main__logo__image" src="<?php echo get_template_directory_uri(); ?>/dist/img/novuslogo.svg" alt="Novus Home Buyers">
+                                <span class="u-hiddenVisually">Novus Home Buyers</span>
+                            </a>
+                            <span class="u-hiddenVisually"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></span>
+                        </h1>
+                        <div class="c-masthead__main__business c-business" itemscope="" itemtype="http://schema.org/LocalBusiness">
+                            <div class="c-business__contact">
+                                <label class="c-business__label">Get in touch</label>
+                                <div>
+                                    <a href="mailto:info@novushomebuyers.com" itemprop="email">info@novushomebuyers.com</a>
                                 </div>
+                                <div>
+                                    <a href="tel:571-384-5474" class="c-business__phone" itemprop="telephone"  content="571-384-5474">
+                                        571-384-5474
+                                    </a>
+                                </div>
+                            </div>
 
-                                <div class="c-business__hours">
-                                    <label class="c-business__label">Office Hours</label>
-                                    <div itemprop="openingHours" content="Mo,Tu,We,Th, Fr 07:00-10:00">
-                                        <div>Monday to Friday</div>
-                                        <div>7am to 10pm</div>
-                                    </div>
+                            <div class="c-business__hours">
+                                <label class="c-business__label">Office Hours</label>
+                                <div itemprop="openingHours" content="Mo,Tu,We,Th, Fr 07:00-10:00">
+                                    <div>Monday to Friday</div>
+                                    <div>7am to 10pm</div>
                                 </div>
-                            </div>                         
-                        </div>
+                            </div>
+                        </div>                         
                     </div>
                 </div>
                 <nav class="c-masthead__nav js-menu" id="menu" role="navigation">
                     <div class="o-container">
-                        <div class="o-container__inner">
-                            <button class="c-masthead__nav__toggle showMenu js-menu-toggle">
-                                <span class="showMenu__wrap"><span class="showMenu__icon"></span></span>
-                                <span class="showMenu__text">Menu</span>
-                            </button>
-                            <?php html5blank_nav(); ?>
-                        </div>
+                        <button class="c-masthead__nav__toggle showMenu js-menu-toggle">
+                            <span class="showMenu__wrap"><span class="showMenu__icon"></span></span>
+                            <span class="showMenu__text">Menu</span>
+                        </button>
+                        <?php html5blank_nav(); ?>
                     </div>
                 </nav>
             </header>

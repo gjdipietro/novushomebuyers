@@ -32,7 +32,7 @@ $container: 1300px;
 
 
 // layout mq
-$mq-fulllayout: $container;
+$mq-fulllayout: $container + 100px;
 
 // type mq
 $mq-120font: 60em;

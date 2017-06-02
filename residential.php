@@ -6,14 +6,10 @@
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="o-entry">
         <?php the_post_thumbnail(); ?> 
         <header class="header o-entry__title">
-            <div class="o-container__inner">
-                <h1><?php the_title(); ?></h1>
-            </div>
+            <h1><?php the_title(); ?></h1>
         </header>
         <section class="o-entry__content">
-            <div class="o-container__inner">
-                <?php the_content(); ?>
-            </div>
+            <?php the_content(); ?>
         </section>
         
         <section class="o-inlay">
@@ -41,14 +37,12 @@
 
         <section class="c-imageCopy c-imageCopy--left">
             <div class="o-container">
-                <div class="o-container__inner">
-                    <figure class="c-imageCopy__img">
-                        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2017/05/3steps.png" alt="3 Steps away from a sale" />
-                    </figure>
-                    <div class="c-imageCopy__copy">
-                        <h2><?php echo get_post_meta($post->ID, 'optionsTitle', true); ?></h2>
-                        <?php echo get_post_meta($post->ID, 'optionsBody', true); ?>
-                    </div>
+                <figure class="c-imageCopy__img">
+                    <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2017/05/3steps.png" alt="3 Steps away from a sale" />
+                </figure>
+                <div class="c-imageCopy__copy">
+                    <h2><?php echo get_post_meta($post->ID, 'optionsTitle', true); ?></h2>
+                    <?php echo get_post_meta($post->ID, 'optionsBody', true); ?>
                 </div>
             </div>
         </section>

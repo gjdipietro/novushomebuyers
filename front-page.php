@@ -21,7 +21,7 @@
     
     <section class="o-inlay o-inlay--tight">
         <div class="o-container">
-            <header class="o-container__inner">
+            <header>
                 <h2 class="c-banner__title"><?php echo get_post_meta($post->ID, 'getStartedHeading', true); ?></h2>
                 <p><?php echo get_post_meta($post->ID, 'getStartedCopy', true); ?></p>
             </header>
