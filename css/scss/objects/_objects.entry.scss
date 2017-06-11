@@ -29,6 +29,9 @@
         h2 ~ h2 {
             margin-top: $unit*2;
         }
+        img {
+            min-width: 100%;
+        }
     }
 }
 

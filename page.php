@@ -7,9 +7,8 @@
         <header class="header o-entry__title">
              <h1><?php the_title(); ?></h1>
         </header>
-        <section class="o-entry__content">
+        <section class="o-entry__content o-container">
             <?php the_content(); ?>
-            <div class="entry-links"><?php wp_link_pages(); ?></div>
         </section>
         
         <?php if ( get_post_meta($post->ID, 'includeContactForm', true) ) {

@@ -8,7 +8,7 @@
         <header class="header o-entry__title">
             <h1><?php the_title(); ?></h1>
         </header>
-        <section class="o-entry__content">
+        <section class="o-entry__content o-container">
             <?php the_content(); ?>
         </section>
         
